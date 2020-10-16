@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>shop</title>
+	<title>SHOP</title>
 	<link rel="stylesheet" href="../css/all.min.css">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/base.css">
@@ -13,91 +13,24 @@
 	<script src="../js/moment.min.js"></script>
 </head>
 <body>
-	<div class="wrapper">
-			<!-- header-wrapper -->
-			<header class="header-wrapper">
-				<h1 class="logo-wrap">
-					<img src="../img/sunny.png" alt="로고심볼" class="logo">
-					<div class="logo-text">
-						<div>WEATHER</div>
-						<div>DAILY / WEEKLY</div>
-					</div>
-				</h1>
-			</header>
-			<!-- // header-wrapper -->
-
-			<!-- main-wrapper -->
-			<div class="main-wrapper wrap">
-				<div class="now-wrapper">
-					<div class="map-wrapper">
-						<div class="city-wrap">
-							<select name="city" id="city" class="form-control">
-								<option value="" selected>도시를 선택하세요</option>
-							</select>
-						</div>
-						<div id="map"></div>
-					</div>
-					<div class="loc-wrapper">
-						<h2 class="title">
-							<span class="title-loc"></span>
-							<small> 
-								- <span class="title-date"></span> 
-									<span class="title-time"></span>
-							</small>
-						</h2>
-						<div class="cont-wrapper">
-							<div class="daily-weather">
-								<div class="icon-wrap">
-									<img>
-								</div>
-								<div class="cont-wrap">
-									<h3 class="temp-wrap">
-										온도: <span class="temp"></span>℃ / 
-										<small>
-											체감온도: <span class="temp-feel"></span>℃
-										</small>
-									</h3>
-									<h3 class="desc-wrap">
-										<span class="desc-title"></span> / 
-										<span class="desc"></span>
-									</h3>
-									<div class="press-wrap">
-										기압: <span class="pressure"></span>mmHg | 
-										습도: <span class="humidity"></span>%
-									</div>
-									<div class="wind-wrap"> 
-										바람: <span class="wind"></span> 
-										- <span class="wind-speed"></span>m/s
-									</div>
-								</div>
-								<div class="misc-wrap">
-									일출: <span class="sunrise"></span> | 
-									일몰: <span class="sunset"></span>
-								</div>
-							</div>
-							<div class="weekly-weather">
-								
-							</div>
-						</div>
-					</div>
+	<header class="header-wrapper">
+		<div class="top-wrapper">
+			<div class="wrapper">
+				<div class="tel-wrap">
+					<i class="fa fa-phone-square"></i>
+					<span>OUR PHONE NUMBER: +77 (756) 334 876</span>
+				</div>
+				<div class="link-wrap">
+					<a href="#" class="link"><i class="fa fa-user"></i> MY ACCOUNT</a>
+					<a href="#" class="link"><i class="fa fa-shopping-basket"></i> CART</a> 
+					<a href="#" class="link"><i class="fa fa-map-pin"></i> OUR LOCATION</a> 
+					<a href="#" class="link"><i class="fa fa-envelope"></i> CONTACT US</a>
 				</div>
 			</div>
-			<!-- // main-wrapper -->
-
-			<!-- daily-wrapper -->
-			<div class="daily-wrapper wrap">
-
-			</div>
-			<!-- // daily-wrapper -->
-
-			<!-- weekly-wrapper -->
-			<div class="weekly-wrapper wrap">
-
-			</div>
-			<!-- // weekly-wrapper -->
-
-	</div>
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=644d617a85cb7f28982d642138d22c33"></script>
+		</div>
+		<div class="title-wrapper"></div>
+		<div class="search-wrapper"></div>
+	</header>
 	<script src="../js/index.js"></script>
 </body>
 </html>
