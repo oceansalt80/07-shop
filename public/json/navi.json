@@ -1,9 +1,9 @@
 {
 	"navs": [
-		{"title": "HOME", "link": "#", "class":"navi0", "icon": "", "subs": [
+		{"title": "HOME", "link": "#", "subs": [
 			{"title": "<span>1.</span> Bakery", "src": "../img/bakery.jpg", "link": "#"},
-			{"title": "<span>2.</span> Bicycle", "src": "../img/bicycle.jpg", "link": "#"},
 			{"title": "<span>3.</span> Car", "src": "../img/coffee.jpg", "link": "#"},
+			{"title": "<span>2.</span> Bicycle", "src": "../img/bicycle.jpg", "link": "#"},
 			{"title": "<span>4.</span> coffee", "src": "../img/bakery.jpg", "link": "#"},
 			{"title": "<span>5.</span> Cosmetics", "src": "../img/cosmetics.jpg", "link": "#"},
 			{"title": "<span>6.</span> Electronics", "src": "../img/electronics.jpg", "link": "#"},
@@ -12,8 +12,10 @@
 			{"title": "<span>9.</span> Game", "src": "../img/game.jpg", "link": "#"},
 			{"title": "<span>10.</span> Lighting", "src": "../img/lighting.jpg", "link": "#"}
 		]},
-		{"title": "SHOP", "link": "#", "class":"navi1 stc", "icon": "SALE", "subs": [
-				{"title": "SHOP STYLES", "link": "#", "subs": [
+		{
+			"title": "SHOP", "link": "#", "subs": [
+				
+								{"title": "SHOP STYLES", "link": "#", "subs": [
 					{"title": "Quick shop productHOT", "link": "#", "icon": "HOT"},
 					{"title": "Masonry Grid", "link": "#", "icon": ""},
 					{"title": "Default style", "link": "#", "icon": ""},
@@ -58,11 +60,12 @@
 					{"title": "Category banner", "link": "#", "icon": ""},
 					{"title": "RTL Shop page", "link": "#", "icon": "NEW"}
 				]}
+
 			]
 		},
-		{"title": "BLOG", "link": "#", "class":"navi2", "icon": "", "subs": []},
-		{"title": "PAGES", "link": "#", "class":"navi3", "icon": "", "subs": []},
-		{"title": "FEATURES", "link": "#", "class":"navi4", "icon": "", "subs": []}
+		{"title": "BLOG", "link": "#", "subs": []},
+		{"title": "PAGES", "link": "#", "subs": []},
+		{"title": "FEATURES", "link": "#", "subs": []}
 	]
 }
 
