@@ -36,9 +36,13 @@ function onNaviLoad(r) {
 				html += '			<div class="sub">';
 				html += '				<div class="title">'+r.navs[i].subs[j].title+'</div>';
 				for(var k in r.navs[i].subs[j].subs) {
-					html += '			<div class="name">'+r.navs[i].subs[j].subs[k].title+'</div>';
-				}
-				html += '			</div>';
+					html += '			<div class="name rel">'+r.navs[i].subs[j].subs[k].title;
+					if(r.navs[i].subs[j].subs[k].icon !=''){
+						html += '<div class="icon red">'+r.navs[i].icon;
+			html += '<i class="fas fa-caret-right"></i>';
+			html += '</div>';
+						}
+					html += '			</div>';
 			}
 			html += '		</div>';
 			html += '		<div class="infos">';

@@ -1,6 +1,7 @@
 {
 	"navs": [
 		{"title": "HOME", "link": "#", "subs": [
+			
 			{"title": "<span>1.</span> Bakery", "src": "../img/bakery.jpg", "link": "#"},
 			{"title": "<span>3.</span> Car", "src": "../img/coffee.jpg", "link": "#"},
 			{"title": "<span>2.</span> Bicycle", "src": "../img/bicycle.jpg", "link": "#"},
@@ -58,7 +59,7 @@
 					{"title": "Sidebar Right", "link": "#", "icon": ""},
 					{"title": "No sidebar", "link": "#", "icon": ""},
 					{"title": "Category banner", "link": "#", "icon": ""},
-					{"title": "RTL Shop page", "link": "#", "icon": "NEW"}
+					{"title": "RTL Shop page", "link": "#", "icon": "NEW","color":"green"},
 				]}
 
 			]
