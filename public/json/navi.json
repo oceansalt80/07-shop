@@ -1,7 +1,7 @@
 {
 	"navs": [
 		{"title": "HOME", "link": "#", "subs": [
-			
+
 			{"title": "<span>1.</span> Bakery", "src": "../img/bakery.jpg", "link": "#"},
 			{"title": "<span>3.</span> Car", "src": "../img/coffee.jpg", "link": "#"},
 			{"title": "<span>2.</span> Bicycle", "src": "../img/bicycle.jpg", "link": "#"},
@@ -62,6 +62,8 @@
 					{"title": "RTL Shop page", "link": "#", "icon": "NEW","color":"green"},
 				]}
 
+			], "infors":[
+				{"title":"FREE SHIPPING", "LINK":"#"}
 			]
 		},
 		{"title": "BLOG", "link": "#", "subs": []},
@@ -69,4 +71,16 @@
 		{"title": "FEATURES", "link": "#", "subs": []}
 	]
 }
+
+FREE SHIPPING
+Free for $50+ orders
+
+BUYER SUPPORT
+Get in touch 24/7
+
+TOTAL SECURITY
+Secure checkout
+
+RETURN POLICY
+14 days ago
 

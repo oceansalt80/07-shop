@@ -46,6 +46,12 @@ function onNaviLoad(r) {
 			}
 			html += '		</div>';
 			html += '		<div class="infos">';
+			for(var k in r.navs[i].infos){
+				html += '<div class="info">';
+				html += '<div class="title">'+r.navs[i].subs[j].infos[k].title+'</div>';
+				html +='<div class="content">'+r.navs[i].subs[j].infos[k].content+'</div>';
+				html +='</div>';
+			}
 			html += '		</div>';
 			html += '	</div>';
 			html += '	<div class="rt">';

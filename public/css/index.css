@@ -59,8 +59,9 @@ html, body {font-size: 16px;}
 .title-wrapper .navi1 .sub-wrap > .wrapper > .lt {flex: 75% 0 0;}
 .title-wrapper .navi1 .sub-wrap > .wrapper > .lt > .subs {display: flex;}
 .title-wrapper .navi1 .sub-wrap > .wrapper > .lt > .subs > .sub {flex: 23% 0 0; margin: 0 1%;}
-.title-wrapper .navi1 .sub-wrap > .wrapper > .it > .subs > .sub > .title{font-weight:bold; color: #666; padding-bottom: 1em;}
-.title-wrapper .navi1 .sub-wrap > .wrapper > .it > .subs > .sub > .name {color: #aaa; font-size:0.875em; padding:0.375em 0;}
+.title-wrapper .navi1 .sub-wrap > .wrapper > .it > .subs > .sub > .title{font-weight:bold; color: #666; padding-bottom: 1em; transition: all 0.5s; cursor;}
+.title-wrapper .navi1 .sub-wrap > .wrapper > .it > .subs > .sub > .name {color: #aaa; font-size:0.875em; padding:0.375em 0; transition: allk 0.5s; cursor;}
+
 .title-wrapper .navi1 .sub-wrap > .wrapper > .rt {flex: 25% 0 0;}
 
 
