@@ -1,6 +1,6 @@
 {
 	"navs": [
-		{"title": "HOME", "link": "#", "class":"", "subs": [
+		{"title": "HOME", "link": "#", "subs": [
 			{"title": "1. Bakery", "src": "../img/bakery.jpg", "link": "#"},
 			{"title": "2. Bicycle", "src": "../img/bicycle.jpg", "link": "#"},
 			{"title": "3. Car", "src": "../img/coffee.jpg", "link": "#"},
@@ -13,7 +13,7 @@
 			{"title": "10. Lighting", "src": "../img/lighting.jpg", "link": "#"}
 		]},
 		{
-			"title": "SHOP", "link": "#", "class":"stc", "subs": [
+			"title": "SHOP", "link": "#", "subs": [
 				{"title": "SHOP STYLES", "link": "#", "subs": [
 					{"title": "Quick shop productHOT", "link": "#", "icon": "HOT"},
 					{"title": "Masonry Grid", "link": "#", "icon": ""},
@@ -59,11 +59,12 @@
 					{"title": "Category banner", "link": "#", "icon": ""},
 					{"title": "RTL Shop page", "link": "#", "icon": "NEW"}
 				]}
+				
 			]
 		},
-		{"title": "BLOG", "link": "#", "class":"", "subs": []},
-		{"title": "PAGES", "link": "#", "class":"", "subs": []},
-		{"title": "FEATURES", "link": "#", "class":"", "subs": []}
+		{"title": "BLOG", "link": "#", "subs": []},
+		{"title": "PAGES", "link": "#", "subs": []},
+		{"title": "FEATURES", "link": "#", "subs": []}
 	]
 }
 
