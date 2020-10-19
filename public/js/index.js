@@ -1,6 +1,8 @@
-$(".navi-wrap > .nadvi").mouseenter(onEnter);
-$(".navi-wrap > .nadvi").mouseleave(onLeave);
-function onEnter(){
-$(this).
+$(".navi-wrap > .navi").mouseenter(onEnter);
+$(".navi-wrap > .navi").mouseleave(onLeave);
+function onEnter() {
+	$(this).find(".sub-wrap").show();
 }
-function onLeave(){}
+function onLeave() {
+	$(this).find(".sub-wrap").hide();
+}
