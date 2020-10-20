@@ -12,26 +12,30 @@ function onColorClick(){
 		$imgCase.eq($(this).index()).stop().delay(100).fadeIn(100);
 	}
 	var suvNow=0;
-	var suvLast=2;
+	var suvLast=3;
 	function onSubPrevClick(){
-		subNow = subNow == 0 ? = subLast : subNow - 1;
+		/* subNow = subNow == 0 ? = subLast : subNow - 1; */
 		if(subNow == 0){
 			subNow = 2;
-			$(".sub-slide.wrap").css("left",0);
+			$(".sub-slide.wrap").css("left", -subLast = 100 + "%");
 		}
-		else{
-			subNow--;
+		else subNow--;
+			subAni();
 		}
-			SubAni();
-		}
-	}
 function onSubNextClick(){
-	subNow = subNow == 2 ? = subLast : subNow + 1;
-	SubAni();
+	subNow = subNow == 3 ? 1 : subNow + 1;
+	subAni();
 }
-function SubAni(){
-$(".sub-slide.wrap").stop().animate({"left":-33.3333 * subNow +"%"}, 500);
+
+function subAni(){
+$(".sub-slide.wrap").stop().animate({"left":-100 * subNow +"%"}, 500, function(){
+	if(subNow == subLast) {
+		subNow = 0;
+		$(".sub-slide .wrap").css("left", 0);
+	}
+});
 }
+
 /** Main Navi 생성 **********************/
 $.get('../json/navi.json', onNaviLoad);
 function onNaviLoad(r) {
