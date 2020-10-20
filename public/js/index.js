@@ -4,6 +4,12 @@ function onEnter() {
 function onLeave() {
 	$(this).find(".sub-wrap").css("display", "none");
 }
+function onColorClick(){
+	var $imgCase =$(this).parent().prev().find(".img-case");
+	$imgCase.stop().fadeOut(300);
+		$imgCase.eq($(this).index()).stop().fadeIn(300);
+	}
+}
 
 /** Main Navi 생성 **********************/
 $.get('../json/navi.json', onNaviLoad);
@@ -70,6 +76,7 @@ function onNaviLoad(r) {
 	}
 	$(".navi-wrap > .navi").mouseenter(onEnter);
 	$(".navi-wrap > .navi").mouseleave(onLeave);
+	$(".navi-wrap > .navi").find(".color").click(onColorClick)
 }
 /*
 <div class="navi">
