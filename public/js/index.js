@@ -6,10 +6,9 @@ function onLeave() {
 }
 function onColorClick(){
 	var $imgCase =$(this).parent().prev().find(".img-case");
-	$imgCase.stop().fadeOut(300);
-		$imgCase.eq($(this).index()).stop().fadeIn(300);
+	$imgCase.stop().fadeOut(100);
+		$imgCase.eq($(this).index()).stop().delay(100).fadeIn(200);
 	}
-}
 
 /** Main Navi 생성 **********************/
 $.get('../json/navi.json', onNaviLoad);
