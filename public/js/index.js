@@ -9,9 +9,29 @@ function onColorClick(){
 	$(this).sibling
 	var $imgCase =$(this).parent().prev().find(".img-case");
 	$imgCase.stop().fadeOut(100);
-		$imgCase.eq($(this).index()).stop().delay(100).fadeIn(200);
+		$imgCase.eq($(this).index()).stop().delay(100).fadeIn(100);
 	}
-
+	var suvNow=0;
+	var suvLast=2;
+	function onSubPrevClick(){
+		subNow = subNow == 0 ? = subLast : subNow - 1;
+		if(subNow == 0){
+			subNow = 2;
+			$(".sub-slide.wrap").css("left",0);
+		}
+		else{
+			subNow--;
+		}
+			SubAni();
+		}
+	}
+function onSubNextClick(){
+	subNow = subNow == 2 ? = subLast : subNow + 1;
+	SubAni();
+}
+function SubAni(){
+$(".sub-slide.wrap").stop().animate({"left":-33.3333 * subNow +"%"}, 500);
+}
 /** Main Navi 생성 **********************/
 $.get('../json/navi.json', onNaviLoad);
 function onNaviLoad(r) {
