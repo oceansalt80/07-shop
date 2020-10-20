@@ -14,7 +14,7 @@ function onNaviLoad(r) {
 		html  = '<div class="navi '+r.navs[i].class+'">';
 		html += '<div class="title">'+r.navs[i].title+' <i class="fa fa-angle-down"></i>';
 		if(r.navs[i].icon != '') {
-			html += '<div class="icon red">'+r.navs[i].icon;
+			html += '<div class="icon '+r.navs[i].color+'">'+r.navs[i].icon;
 			html += '<i class="fas fa-caret-right"></i>';
 			html += '</div>';
 		} 
@@ -37,20 +37,25 @@ function onNaviLoad(r) {
 				html += '				<div class="title">'+r.navs[i].subs[j].title+'</div>';
 				for(var k in r.navs[i].subs[j].subs) {
 					html += '			<div class="name rel">'+r.navs[i].subs[j].subs[k].title;
-					if(r.navs[i].subs[j].subs[k].icon !=''){
-						html += '<div class="icon red">'+r.navs[i].icon;
-			html += '<i class="fas fa-caret-right"></i>';
-			html += '</div>';
-						}
-					html += '			</div>';
+					if(r.navs[i].subs[j].subs[k].icon != ''){
+						html += '<div class="icon '+r.navs[i].subs[j].subs[k].color+'">'+r.navs[i].subs[j].subs[k].icon;
+						html += '<i class="fas fa-caret-right"></i>';
+						html += '</div>';
+					}
+					html +='</div>';
+				}
+				html += '			</div>';
 			}
 			html += '		</div>';
 			html += '		<div class="infos">';
-			for(var k in r.navs[i].infos){
+			for(var k in r.navs[i].infos) {
 				html += '<div class="info">';
-				html += '<div class="title">'+r.navs[i].subs[j].infos[k].title+'</div>';
-				html +='<div class="content">'+r.navs[i].subs[j].infos[k].content+'</div>';
-				html +='</div>';
+				html += '	<div class="title">';
+				html += '		<i class="'+r.navs[i].infos[k].icon+'"></i> ';
+				html += 		r.navs[i].infos[k].title;
+				html += '	</div>';
+				html += '	<div class="content">'+r.navs[i].infos[k].content+'</div>';
+				html += '</div>';
 			}
 			html += '		</div>';
 			html += '	</div>';
