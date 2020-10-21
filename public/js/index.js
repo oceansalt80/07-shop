@@ -4,36 +4,34 @@ function onEnter() {
 function onLeave() {
 	$(this).find(".sub-wrap").css("display", "none");
 }
-function onColorClick(){
-	$(this) .addClass("active").siblings().removeClass("active");
-	$(this).sibling
-	var $imgCase =$(this).parent().prev().find(".img-case");
+function onColorClick() {
+	$(this).addClass("active").siblings().removeClass("active");
+	var $imgCase = $(this).parent().prev().find(".img-case");
 	$imgCase.stop().fadeOut(100);
-		$imgCase.eq($(this).index()).stop().delay(100).fadeIn(100);
-	}
-	var suvNow=0;
-	var suvLast=3;
-	function onSubPrevClick(){
-		/* subNow = subNow == 0 ? = subLast : subNow - 1; */
-		if(subNow == 0){
-			subNow = 2;
-			$(".sub-slide.wrap").css("left", -subLast = 100 + "%");
-		}
-		else subNow--;
-			subAni();
-		}
-function onSubNextClick(){
-	subNow = subNow == 3 ? 1 : subNow + 1;
-	subAni();
+	$imgCase.eq($(this).index()).stop().delay(100).fadeIn(100);
 }
 
-function subAni(){
-$(".sub-slide.wrap").stop().animate({"left":-100 * subNow +"%"}, 500, function(){
-	if(subNow == subLast) {
-		subNow = 0;
-		$(".sub-slide .wrap").css("left", 0);
+var subNow = 0;
+var subLast = 3;
+function onSubPrevClick() {
+	if(subNow == 0) {
+		subNow = subLast - 1;
+		$(".sub-slide .wrap").css("left", -subLast * 100 +"%");
 	}
-});
+	else subNow--;
+	subAni();
+}
+function onSubNextClick() {
+	if(subNow < subLast) subNow++;
+	subAni();
+}
+function subAni() {
+	$(".sub-slide .wrap").stop().animate({"left": -100 * subNow +"%"}, 500, function(){
+		if(subNow == subLast) {
+			subNow = 0;
+			$(".sub-slide .wrap").css("left", 0);
+		}
+	});
 }
 
 /** Main Navi 생성 **********************/
@@ -101,7 +99,9 @@ function onNaviLoad(r) {
 	}
 	$(".navi-wrap > .navi").mouseenter(onEnter);
 	$(".navi-wrap > .navi").mouseleave(onLeave);
-	$(".navi-wrap > .navi").find(".color").click(onColorClick)
+	$(".sub-slide .color").find("span").click(onColorClick);
+	$(".sub-slide .bt-prev").click(onSubPrevClick);
+	$(".sub-slide .bt-next").click(onSubNextClick);
 }
 /*
 <div class="navi">
