@@ -34,6 +34,9 @@ function subAni() {
 	});
 }
 
+function columNaker(){
+	html += '		<div class="subs">';
+}
 /** Main Navi 생성 **********************/
 $.get('../json/navi.json', onNaviLoad);
 function onNaviLoad(r) {
@@ -63,7 +66,7 @@ function onNaviLoad(r) {
 			if(r.navs[i].type === 'FULL'){
 			html += '<div class="wrapper">';
 			html += '	<div class="lt">';
-			html += '		<div class="subs">';
+		
 			for(var j in r.navs[i].subs) {
 				html += '			<div class="sub">';
 				html += '				<div class="title">'+r.navs[i].subs[j].title+'</div>';
@@ -131,7 +134,7 @@ for(var j in r.navs[i].slides){}
 	html += "
 					</div>
 	html += "					<div class="bt bt-icon bt-sync">
-	html += "						<div class="popper">
+	html += "						<div class="popper"> 
 	html += "							Compare <i class="fa fa-caret-right"></i>
 	html += "
 						</div>
