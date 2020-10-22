@@ -1,6 +1,6 @@
 {
 	"navs": [
-		{"title": "HOME", "link": "#", "class":"navi0", "icon": "", "subs": [-
+		{"title": "HOME", "link": "#", "class":"IMAGE", "icon": "", "subs": [
 			{"title": "<span>1.</span> Bakery", "src": "../img/bakery.jpg", "link": "#"},
 			{"title": "<span>2.</span> Bicycle", "src": "../img/bicycle.jpg", "link": "#"},
 			{"title": "<span>3.</span> Car", "src": "../img/coffee.jpg", "link": "#"},
@@ -12,7 +12,7 @@
 			{"title": "<span>9.</span> Game", "src": "../img/game.jpg", "link": "#"},
 			{"title": "<span>10.</span> Lighting", "src": "../img/lighting.jpg", "link": "#"}
 		]},
-		{"title": "SHOP", "link": "#", "class":"navi1 stc", "icon": "SALE", "color": "red", "subs": [
+		{"title": "SHOP", "link": "#", "class":"FULL COL COL4", "icon": "SALE", "color": "red", "subs": [
 				{"title": "SHOP STYLES", "link": "#", "subs": [
 					{"title": "Quick shop product", "link": "#", "icon": "HOT", "color": "yellow"},
 					{"title": "Masonry Grid", "link": "#", "icon": ""},
@@ -58,33 +58,130 @@
 					{"title": "Category banner", "link": "#", "icon": ""},
 					{"title": "RTL Shop page", "link": "#", "icon": "NEW", "color": "green"}
 				]}
-			
-								{"title": "FREE SHIPPING", "link": "#", "content": "Free for $50+ orders", "icon": "fa fa-rocket"},
+			], "infos": [
+				{"title": "FREE SHIPPING", "link": "#", "content": "Free for $50+ orders", "icon": "fa fa-rocket"},
 				{"title": "BUYER SUPPORT", "link": "#", "content": "Get in touch 24/7", "icon": "fa fa-phone"},
 				{"title": "TOTAL SECURITY", "link": "#", "content": "Secure checkout", "icon": "fa fa-th"},
 				{"title": "RETURN POLICY", "link": "#", "content": "14 days ago", "icon": "fa fa-reply"}
-			]
-		},
-		], "infos": [-
 			], "slides": [
 				{
-					"cases":[
+					"cases": [
 						{
-							"img":["..img/ss-01-blue-01.jpg", "../img/ss-01-blue-02.jpg"], "color":"blue"},
-								{
-									"img":["..img/ss-01-black-01.jpg", "../img/ss-01-black-02.jpg"], "color":"black"},
-										{
-											"img":["..img/ss-01-yellow-01.jpg", "../img/ss-01-yellow-02.jpg"], "color":"yellow"}],
-"title":"Yus condntum sapien",
-"brand":"BASEL",
-"price":"$S92.00"
-"priceSale":"",
-"priceDef":""
-										},
-										{}
-		{"title": "BLOG", "link": "#", "class":"navi2", "icon": "", "subs": []},
-		{"title": "PAGES", "link": "#", "class":"navi3", "icon": "", "subs": []},
-		{"title": "FEATURES", "link": "#", "class":"navi4", "icon": "", "subs": []}
+							"img": ["../img/ss-01-blue-01.jpg", "../img/ss-01-blue-02.jpg"],
+							"color": "blue"
+						},
+						{
+							"img": ["../img/ss-01-black-01.jpg", "../img/ss-01-black-02.jpg"],
+							"color": "black"
+						},
+						{
+							"img": ["../img/ss-01-yellow-01.jpg", "../img/ss-01-yellow-02.jpg"],
+							"color": "yellow"
+						}
+					],
+					"title": "Yus condntum sapien",
+					"brand": "BASEL",
+					"price": "$592.00",
+					"priceDef": "",
+					"priceSale": ""
+				},
+				{
+					"cases": [
+						{
+							"img": ["../img/ss-02-blue-01.jpg"],
+							"color": "blue"
+						},
+						{
+							"img": ["../img/ss-02-red-01.jpg", "../img/ss-02-red-02.jpg"],
+							"color": "red"
+						},
+						{
+							"img": ["../img/ss-02-yellow-01.jpg"],
+							"color": "yellow"
+						}
+					],
+					"title": "Yom orki lacinia",
+					"brand": "BASEL",
+					"price": "",
+					"priceDef": "$799.00",
+					"priceSale": "$592.00"
+				},
+				{
+					"cases": [
+						{
+							"img": ["../img/ss-01-yellow-01.jpg", "../img/ss-01-yellow-02.jpg"],
+							"color": "yellow"
+						},
+						{
+							"img": ["../img/ss-01-black-01.jpg", "../img/ss-01-black-02.jpg"],
+							"color": "black"
+						},
+						{
+							"img": ["../img/ss-01-blue-01.jpg", "../img/ss-01-blue-02.jpg"],
+							"color": "blue"
+						}
+					],
+					"title": "Yus condntum sapien2",
+					"brand": "BASEL",
+					"price": "",
+					"priceDef": "$1,299.00",
+					"priceSale": "$892.00"
+				}
+			]
+		},
+		{"title": "BLOG", "link": "#", "class":"COL COL1", "icon": "", "subs": [
+			{"title": "", "link": "", "icon": "", "subs": [
+				{"title": "BLOG DEFAULT", "link": "#", "icon":""},
+				{"title": "ALTERNATIVE STYLE", "link": "#", "icon":""},
+				{"title": "BLOG FULL WIDTH", "link": "#", "icon":""},
+				{"title": "SMALL IMAGES", "link": "#", "icon":""},
+				{"title": "MASONRY GRID", "link": "#", "icon":""},
+				{"title": "BLOG MASK", "link": "#", "icon":"HOT", "color": "yellow"},
+				{"title": "4 COLUMNS", "link": "#", "icon":""},
+				{"title": "BLOG SINGLE POST", "link": "#", "icon":""},
+				{"title": "BLOG RTL", "link": "#", "icon":"NEW", "color": "green"}
+			]}
+		]},
+		{"title": "PAGES", "link": "#", "class":"COL COL4", "icon": "", "subs": [
+			{"title": "PAGE", "link": "#", "subs": [
+				{"title": "FaQs", "link": "#", "icon": "", "color": ""},
+				{"title": "About Me", "link": "#", "icon": "", "color": ""},
+				{"title": "Our Shop", "link": "#", "icon": "", "color": ""},
+				{"title": "Contact Us", "link": "#", "icon": "", "color": ""},
+				{"title": "Contact Us 2", "link": "#", "icon": "", "color": ""},
+				{"title": "Shortcode Helper", "link": "#", "icon": "", "color": ""}
+			]},
+			{"title": "HEADERS", "link": "#", "subs": [
+				{"title": "Header base", "link": "#", "icon": "", "color": ""},
+				{"title": "Categories menu", "link": "#", "icon": "HOT", "color": "yellow"},
+				{"title": "Simplified", "link": "#", "icon": "", "color": ""},
+				{"title": "With logo center", "link": "#", "icon": "", "color": ""},
+				{"title": "Split menu", "link": "#", "icon": "", "color": ""},
+				{"title": "Header vertical", "link": "#", "icon": "", "color": ""},
+				{"title": "Dark header", "link": "#", "icon": "", "color": ""}
+			]},
+			{"title": "PORTFOLIO", "link": "#", "subs": [
+				{"title": "Grid 4 Columns", "link": "#", "icon": "", "color": ""},
+				{"title": "Grid No Space", "link": "#", "icon": "", "color": ""},
+				{"title": "Grid full width", "link": "#", "icon": "", "color": ""},
+				{"title": "Alternative style", "link": "#", "icon": "", "color": ""},
+				{"title": "Grid with text", "link": "#", "icon": "", "color": ""},
+				{"title": "Single Project", "link": "#", "icon": "", "color": ""},
+				{"title": "Project Full Width", "link": "#", "icon": "", "color": ""},
+				{"title": "Project with video", "link": "#", "icon": "", "color": ""}
+			]},
+			{"title": "SHOPS", "link": "#", "subs": [
+				{"title": "<i class=\"fa fa-shopping-cart\"></i> Shopping Cart", "link": "#", "icon": "", "color": ""},
+				{"title": "<i class=\"fa fa-user\"></i> My Account", "link": "#", "icon": "", "color": ""},
+				{"title": "<i class=\"fa fa-heart\"></i> Wishlist", "link": "#", "icon": "", "color": ""},
+				{"title": "404 Not Found", "link": "#", "icon": "", "color": ""},
+				{"title": "Password", "link": "#", "icon": "", "color": ""},
+				{"title": "Password 2", "link": "#", "icon": "", "color": ""}
+			]}
+		]},
+		{"title": "FEATURES", "link": "#", "class":"COL COL3", "icon": "", "subs": [
+			
+		]}
 	]
 }
 
