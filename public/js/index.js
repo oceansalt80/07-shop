@@ -183,6 +183,14 @@ function onNaviLoad(r) {
 		// console.log(html);
 		$(".navi-wrap").append(html);
 	}
+	for(var i in r.navs) {
+		html ='<li class="mo-navi">';
+		html +='<div class="title">';
+		html +='<li class="mo-navi">';
+		html +='<li class="mo-navi">';
+		html +='<li class="mo-navi">';
+
+	}
 	$(".navi-wrap > .navi").mouseenter(onEnter);
 	$(".navi-wrap > .navi").mouseleave(onLeave);
 	$(".sub-slide .color").find("span").click(onColorClick);
