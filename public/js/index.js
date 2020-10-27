@@ -307,12 +307,41 @@ function onMobileWrapScroll(e) {
 
 
 function onCateLoad(r) {
-	var html ='';
-	for(var i in r.cates){
-		html = '<div class="cate">'+r.cates[i].title;
-		if(r.cates[i].arrow)
+	var html = '';
+	for(var i in r.cates) {
+		html  = '<div class="cate">'+r.cates[i].title;
+		if(r.cates[i].arrow) html += '<i class="fa fa-angle-right"></i>';
+		html += '</div>';
+		$(".cate-wrap").append(html);
 	}
 }
+
+$(".banner-wrapper .slide-wrap").swipe({
+	swipe: onBannerSwipe,
+})
+
+var bannerNow = 0;
+var bannerLast = 0;
+var banners = [];
+var bannerWidth = 0;
+var bannerWidth = 0;
+function onBannerLoad(r){}
+var html = '';
+for(var i in r.banners){
+	html = '<div class="slide" style="background-image'
+	banner
+}
+function onBannerSwipe(e, dir, dist, suration, fingerCnt, fingerData){
+	if(dir == 'left'){//next}
+	if(bannerNow < bannerLast){
+		bannerNow++;
+		bannerAni();
+	}
+}
+
+if(dir == 'right'){//prev
+if(bannerNow)}
+
 /** 이벤트 등록 **********************/
 
 
