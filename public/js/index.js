@@ -306,11 +306,21 @@ function onMobileWrapScroll(e) {
 }
 
 
+function onCateLoad(r) {
+	var html ='';
+	for(var i in r.cates){
+		html = '<div class="cate">'+r.cates[i].title;
+		if(r.cates[i].arrow)
+	}
+}
 /** 이벤트 등록 **********************/
 
 
 // Main Navi 생성
 $.get('../json/navi.json', onNaviLoad);
+
+// Category  생성
+$.get(''../json/navi.json', onNaviLoad);
 
 // 스크롤 이벤트
 $(window).on("scroll", onScroll);

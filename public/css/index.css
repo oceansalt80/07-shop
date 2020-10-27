@@ -184,6 +184,16 @@ html, body {font-size: 16px; height: 10000px;}
 .mo-navi-wrap .mo-sub-sub .mo-caret {color: #343434; top: -13px; left: 34px;}
 
 
+/* .banner-wrapper */
+.banner-wrapper {background-color:#eee; height:522ps; position:relative;}
+.banner-wrapper > .slide-stage {}
+.banner-wrapper > .wrapper {position:absolute; height:100%; top:0; left:50%; 
+tran}
+.banner-wrapper > .wrapper {border:1px solid red; position: absolute; top: 0;
+left:50%; transform: translateX(-50%);}
+
+
+
 /**************** 반응형 ******************/
 /**************** 반응형 ******************/
 @media screen and (max-width: 1199px) {
