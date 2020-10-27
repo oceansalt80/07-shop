@@ -11,11 +11,11 @@ font-family: 'Lora', serif;
 /**************** 공통사항 ******************/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@@,400;0,500;0,600;1,400;1,500;
-1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
 
-html, body {font-size: 16px; height: 10000px;}
+html, body {font-size: 16px; height: 10000px; font-family: 'Rubik', sans-serif;}
 .wrapper {width: 1100px; margin: 0 auto;}
+
 
 .badge-wrap {position: relative;}
 .badge {display: flex; justify-content: center; align-items: center; position: absolute; top: -8px; right: -8px;}
