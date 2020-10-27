@@ -1,0 +1,7 @@
+{
+	"banners":[
+		{"id":1, src "summary":"Best furniture for your castle", "title":"DESIGN CHAIR", "link": "#","price":799},
+		{"id":2, src "summary":"Best furniture for your castle", "title":"YELLOW SOFA", "link": "#","price":899},
+		{"id":3, src "summary":"Best furniture for your castle", "title":"WOOD CHAIR", "link": "#","price":1099},
+	]
+}
