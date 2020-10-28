@@ -343,7 +343,7 @@ function onBannerLoad(r) {
 	});
 }
 function onBannerSwipe(e, dir, dist, duration, fingerCnt, fingerData) {
-	if(dir == 'left') {	//next
+	if(dir == 'left') {	//next 
 		if(bannerNow < bannerLast) {
 			bannerNow++;
 			bannerAni();
