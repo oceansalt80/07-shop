@@ -30,6 +30,8 @@ html, body {font-size: 16px; height: 10000px; font-family: 'Rubik', sans-serif;}
 .icon.yellow {background-color: #f0bd14; top: -4px; right: -24px;}
 .icon.yellow .fas {color: #f0bd14;}
 
+.title-bars
+
 
 
 
@@ -254,6 +256,7 @@ html, body {font-size: 16px; height: 10000px; font-family: 'Rubik', sans-serif;}
 	.title-wrapper .cart-wrap span {display: none;}
 	.search-wrapper {display: none !important;}
 	.banner-wrapper > .wrapper {display: none;}
+	
 }
 @media screen and (max-width: 767px) {
 	.wrapper {width: 500px;}
