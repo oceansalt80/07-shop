@@ -393,7 +393,7 @@ function bannerAni() {
 		$(this).remove();
 	});
 }
-
+function onProductLoad
 
 /** 이벤트 등록 **********************/
 
