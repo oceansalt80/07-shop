@@ -30,10 +30,11 @@ html, body {font-size: 16px; height: 10000px; font-family: 'Rubik', sans-serif;}
 .icon.yellow {background-color: #f0bd14; top: -4px; right: -24px;}
 .icon.yellow .fas {color: #f0bd14;}
 
-.title-bars {text-align: center; font-size: 1rem; margin-top: 5em;}
+.title-bars {text-align: center; font-size: 1rem; padding: margin: 5em auto;}
 .title-bars > .title-sm {color: #999; letter-spacing: 0.35em; font-size: 0.75em; font-weight: normal;}
-.title-bars > .title {font-size: 1.5em; font-weight: 400; padding: 0.75em;}
+.title-bars > .title {font-size: 1.5em; font-weight: 400; padding: 0.75em; color: #333;}
 .title-bars > .title-green {width: 40px; border: 1px solid #189954; margin: auto;}
+.title-bars > .title-desc {font-size: 0.875em; color: #666;}
 
 .sub-slide {width: 100%; margin: auto;}
 .sub-slide .stage {position: relative; overflow: hidden;}
@@ -310,7 +311,15 @@ left: 12px; width: 50px; height: 50px;}
 transition: all 0.5s;}
 .blog-wrapper .blog .title:hover{color: #3390}
 
-
+/* .news-wrapper */
+.news-wrapper {background: #eee url(../img/newsPaper.png) no-repeat left top; margin height: 100px;}
+.news-wrapper .title-bars {max-width: 500px; padding-top:3em;}
+.news-wrapper .email > input {width: 100%; border: none; padding:0.5em; background-color: trandsparent;}
+.news-wrapper .email > imput:focus {outline: none; border: none;}
+.news-wrapper .comment > imput:focus {outline: none; border: none; background-color: #444;}
+.news-wrapper .comment:focus {outline: none; }
+.news-wrapper .bt-send {background-color: #111; color: #f8f8f8; padding: 0.5em 1.5em; font-size: 0.75em; transition: all 0.5s;}
+.news-wrapper .bt-send:hover {background-color: #444;}
 
 /**************** 반응형 ******************/
 @media screen and (max-width: 1199px) {
