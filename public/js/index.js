@@ -399,10 +399,18 @@ function bannerAni() {
 
 function getCount() {
 	var wid = $(window).outerWidth();
-	var count = 4;
+	var count = 3;
+		else if(wid <= 767 && wid > 575) count = 2;
+	else if(wid <= 575) count = 1;
+	return count;
+}
+
+function getCount2() {
+	var wid = $(window).outerWidth();
+	var count = type == 'A' ? 4 : 3;
 	if(wid <= 991 && wid > 767) count = 3;
 	else if(wid <= 767 && wid > 575) count = 2;
-	else if(wid <= 575) count = 1;
+	else if(wid <= 767) count = 1;
 	return count;
 }
 
@@ -447,26 +455,11 @@ function onProductLoad(r) {
 		}
 	});
 	swiper.on("resize", function() {
-		this.params.slidesPerGroup = getCount();
-		this.params.slidesPerView = getCount();
+		this.params.slidesPerGroup = getCount2();
+		this.params.slidesPerView = getCount2();
 	});
 
-	var swiper2 = new Swiper('.sub-slide.type3 .swiper-container', {
-		slidesPerView: 3,
-		slidesPerGroup: 3,
-		spaceBetween: 0,
-		loop: true,
-		loopFillGroupWithBlank: false,
-		navigation: {
-			nextEl: '.bt-next',
-			prevEl: '.bt-prev',
-		}
-	});
-	swiper2.on("resize", function() {
-		this.params.slidesPerGroup = 3;
-		this.params.slidesPerView = 3;
-	});
-}
+	
 
 function onPrdCateLoad(r) {
 	var html = '';
@@ -522,8 +515,42 @@ function onBranchLoad(r) {
 		$(".branch-wrapper .branch-wrap").append(html);
 	}
 }
+function onblogLoad(r) {
+	for(var i in r.blogs)
+	html  = 'iv class="blog slide swiper-slide">'
+	html += '		<div class="img-wrap">'
+	html += '			<img src="'+r.blogs[i].src+'" alt="blog" class="w-100">'
+	html += '			<div class="date-wrap">'
+	html += '				<div class="date">'+r.blogs[i].date+'</div>'
+	html += '				<div class="month">'+r.blogs[i].month+'</div>'
+	html += '			</div>'
+	html += '			<div class="tag">'+r.blogs[i].tag+'</div>'
+	html += '		</div>'
+	html += '		<h3 class="title">'+r.blogs[i].title+'</h3>'
+	html += '		<button class="bt-comment">Leave a comment</button>'
+	html += '		<p class="content">'+r.blogs[i].content+'</p>'
+	html += '		<button class="bt-read">Rede More</button>'
+	html += '	</div>;'
 
+	$(".blog-wrapper .blog-wrap") .append(html);
+}
 
+	var swiper2 = new Swiper('.sub-slide.type3 .swiper-container', {
+		slidesPerView: 3,
+		slidesPerGroup: 3,
+		spaceBetween: 0,
+		loop: true,
+		loopFillGroupWithBlank: false,
+		navigation: {
+			nextEl: '.bt-next',
+			prevEl: '.bt-prev',
+		}
+	});
+	swiper2.on("resize", function() {
+		this.params.slidesPerGroup = 3;
+		this.params.slidesPerView = 3;
+	});
+}
 /** 이벤트 등록 **********************/
 
 // Main Navi 생성
@@ -543,6 +570,9 @@ $.get('../json/prd-cate.json', onPrdCateLoad);
 
 // branch-wrapper 생성
 $.get('../json/branch.json', onBranchLoad);
+
+// blog-wrapper 생성
+$.get('../json/branch.json', onblogLoad);
 
 // 스크롤 이벤트
 $(window).on("scroll", onScroll);
