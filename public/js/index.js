@@ -395,6 +395,15 @@ function bannerAni() {
 }
 function onProductLoad
 
+function onBranchLoad(r){
+	var html = '';
+	for (var i in r. branchs){
+		html = '<li class="branch">';
+		html += '<img src="'+r.branchs[i].src+'" alt=
+	"'+r.branchs[i].title+"'
+	}
+}
+
 /** 이벤트 등록 **********************/
 
 
